@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Centro</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/redes.css">
+    <link rel="stylesheet" href="CSS/preloader.css">
+    <link rel="stylesheet" href="CSS/mediaqueris.css">
+</head>
+<body>
+
+    <div id="preloader">
+        <img src="img/preloader.gif" alt="">
+    </div>
+
+    <div id="inicio"></div>
+    <header id="header">
+        <div class="container">
+            <div id="logo">
+                <a href="#inicio">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+            <!-- boton hamburguesa -->
+            <label class="btn-menu" onclick="llamar()">
+                <label class="close fas fa-bars" id="menu" style="color: white;"></label>
+            </label>
+            <div class="botonera">
+                <ul>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#galeria">GALERIA</a></li>
+                    <li><a href="#contactos">CONTACTOS</a></li>
+                    <li><a href="login.html"><i class="fas fa-user"></i>LOGIN</a></li>
+                </ul>
+            </div>  
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="overlay">
+            <div class="cont-banner">
+                <h2>Clínica Dental Centro</h2>
+                <p>Más de 10 años de experiencia, ofrecemos a nuestros pacientes confianza, tratamientos modernos y especializados.</p>
+            </div>
+        </div>
+    </div>
+
+    <a class="fas fa-angle-double-up" id="subir" href="#inicio"></a>
+
+    <div id="redes">
+        <div class="social" id="twitter">
+            <a class="fab fa-twitter" href="https://www.facebook.com"></a>
+        </div>
+        <div class="social" id="facebook">
+            <a class="fab fa-facebook" href="https://www.facebook.com"></a>
+        </div>
+        <div class="social" id="youtube">
+            <a class="fab fa-youtube" href="https://www.facebook.com"></a>
+        </div>
+    </div>
+
+
+    <main id="nosotros">
+        <div class="text-nosotros">
+            <h3>Clínica Dental</h3>
+            <hr class="linea">
+        </div>
+        <p class="parrafo"> Somos un equipo de cirujanos dentistas especializados con más de 10 años de experiencia, ofrecemos a nuestros pacientes confianza, tratamientos modernos y especializados en todas nuestras áreas para el cuidado de su salud dental y estética.Nuestros clientes son para nosotros lo mas importante que existe en el mundo. </p>
+        <img src="img/cuidados.jpg" alt="" class="img-responsive">
+    </main>
+
+    <div class="fondo-parralax">
+        <div class="parralax">
+            <h2>Ven y te atendemos con lo mejor...</h2>
+            <p>Especialidad dedicada a devolver la función masticatoria, restaurar y/o devolver la pérdida de dientes a través del uso de prótesis fija, removiblee e implantes para lo mejor de tu Dentadura en el mundo.</p>
+        </div>
+    </div>
+
+    <section id="galeria" class="galeria">
+        <article>
+            <h2>Lo Mejor por las Sonrisas de Nuestros Clientes</h2>
+            <hr class="linea">
+            <p class="parrafo">Ofrecer servicios de excelencia: Para lograr esto hemos diseñado un modelo de servicio diferenciado, basado en una cultura de tratamientos perfectos, disciplina, profesionalismo y diagnósticos acertados, logrando así la total satisfacción de nuestros pacientes.</p>
+        </article>
+        <article class="article-2" style="display: flex; align-items: center;">
+            <input type="submit" value="<<" onclick="atras()" class="botones">
+            <img src="img/img01.jpg" alt="" id="img">
+            <input type="submit" value=">>" onclick="adelante()" class="botones">
+        </article>
+    </section>
+
+    <div class="fondo-contactos" id="contactos">
+        <div class="text-contactos">
+            <h3>Contáctanos</h3>
+            <hr class="linea">
+        </div>
+        <div class="contactos">
+            <div class="contact">
+                <h3>Ubicanos en:</h3>
+                <ul class="listas">
+                    <li>Calle Zero frente a la Idat.</li>
+                    <li>Celular: 984-121-850</li>
+                    <li>Whatsapp: 912-345-587</li>
+                    <li>Info: tolentino1092@hotmail.com</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <div class="formulario">
+                    <h2>Déjanos un Mensaje</h2>
+                    <form action="">
+                        <p>Apellidos y Nombres</p>
+                        <input type="text" placeholder="Ingresa tu nombres completos">
+                        <br>
+                        <p>Correo Electronico</p>
+                        <input type="email" placeholder="Ingresa tu Email">
+                        <br>
+                        <p>Celular</p>
+                        <input type="text" placeholder="Ingresa tu Celular">
+                        <br>
+                        <p>Comentarios</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mapa">
+        <h2 align="center">Nuestro Mapa</h2>
+        <br>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d499318.18395197927!2d-77.24553438054599!3d-12.117399555695094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b845cbd91fed%3A0xc2bf16cf253eacb1!2sIdat%20-%20San%20Juan%20de%20Miraflores!5e0!3m2!1ses!2spe!4v1710352576248!5m2!1ses!2spe" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="fondo-footer">
+        <div class="footer">
+            <footer style="align-content: center;text-align: center;">
+                <img src="img/logo.png" alt="" width="100px">
+                <h3>Dental Dent 2021</h3>
+                <h4>SIGUENOS EN:</h4>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-youtube"></i>
+            </footer>
+            <footer>
+                <h3>HORARIO DE ATENCIÓN</h3>
+                <hr class="linea">
+                <br> 
+                <p>Todos los Dias -     9:00 am - 6:00pm</p>
+                <br>
+                <p>Lunes a Viernes -    9:00 am - 6:00pm</p>
+                <br>
+                <p>Sábados y Domingos - 9:00 am - 5:00pm</p>
+            </footer>
+            <footer>
+                <h3>CONTÁCTANOS EN:</h3>
+                <hr class="linea">
+                <br>
+                <ul class="direcciones">
+                    <li>Mercado de Ciudad frente a la Instituto Idat,
+                        Cuadra 3 San Juan De Miraflores.
+                    </li>
+                    <li>Celular: 984 121 850 / 912 123 456</li>
+                    <li>Correo: miempresa@gmail.com</li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+    <div class="fondo-cierre">
+        <div class="cierre">
+            <p>Creado por &copy: Jesus Tolentino</p>
+        </div>
+    </div>
+    
+    
+    <script src="https://kit.fontawesome.com/76877f85be.js" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+
+</html>
